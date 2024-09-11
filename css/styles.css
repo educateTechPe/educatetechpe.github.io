@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+  }
+  
+  .header {
+    background: #282c34;
+    color: white;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .header h1 {
+    font-size: 2.5em;
+  }
+  
+  .header p {
+    font-size: 1.2em;
+  }
+  
+  .cta {
+    display: inline-block;
+    background: #ff4757;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+  
+  .cta:hover {
+    background: #e84118;
+  }
+  
+  .benefits {
+    text-align: center;
+    padding: 50px 0;
+    background: #f1f1f1;
+  }
+  
+  .benefit-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .benefit {
+    margin: 20px;
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .benefit img {
+    max-width: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .benefit h3 {
+    font-size: 1.5em;
+  }
+  
+  .countdown-section {
+    text-align: center;
+    padding: 50px;
+    background: #ffeaa7;
+  }
+  
+  #countdown {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+  
+  .inscripcion {
+    text-align: center;
+    padding: 50px;
+    background: #74b9ff;
+    color: white;
+  }
+  
+  .inscripcion form {
+    margin-top: 20px;
+  }
+  
+  .inscripcion input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .footer {
+    background: #2d3436;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
