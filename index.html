@@ -651,29 +651,22 @@ ul li:hover {
 						</div>
 						<style>
 							.timer {
-    display: flex;
-    justify-content: center;  /* Centra horizontalmente */
-    align-items: center;      /* Centra verticalmente */
-    text-align: center;       /* Asegura que el texto esté alineado al centro */
-    height: 100vh;            /* Alinea verticalmente en la página completa si es necesario */
-}
-
-#hours, #minutes, #seconds {
-    font-size: 2rem;          /* Tamaño de fuente para que sea más visible, ajusta según necesites */
-}
-
-@media (max-width: 768px) {
-    #hours, #minutes, #seconds {
-        font-size: 1.5rem;    /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
-    }
-}
-
-@media (max-width: 480px) {
-    #hours, #minutes, #seconds {
-        font-size: 1rem;      /* Más ajustes de fuente para dispositivos muy pequeños */
-    }
-}
-
+                               font-size: 5rem;
+							   color: #f2b705;
+							   justify-content: center;  
+                               font-weight: bold;
+                               align-items: center;  
+							   display: flex;
+							   text-align: center;  
+						
+                               }
+						
+                            #hours, #minutes, #seconds {
+                               display: inline-block;
+                               width: 4rem;
+                               text-align: center;
+						
+                             }
 						</style>
 						<script>
 							function startTimer() {
