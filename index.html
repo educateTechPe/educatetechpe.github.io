@@ -304,13 +304,26 @@ document.ondragstart = function() { return false;}
 					<!--fin temario-->
 					<!--MODULO 1-->
 					<style>
-						/* Estilos generales */
+					/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
 
 /* Contenedor principal */
 .et_pb_column {
-    max-width: 1200px;
+    max-width: 1200px;  /* Cambiado para laptops/desktops */
     margin: 0 auto;
     padding: 20px;
+}
+
+/* Ajuste del ancho para pantallas más grandes */
+@media only screen and (min-width: 1024px) {
+    .et_pb_column {
+        max-width: 1400px; /* Ampliar el ancho en laptops y desktops */
+    }
 }
 
 /* Estilos de los módulos */
@@ -420,116 +433,7 @@ strong {
 									</div>
 						</div>
 						<!---FIN MODULO 1-->
-						<style>
-							/* Estilos generales */
-
-
-/* Contenedor principal */
-.et_pb_column {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Estilos de los módulos */
-.et_pb_toggle {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.et_pb_toggle_open {
-    background-color: #0073e6;
-    color: #fff;
-}
-
-/* Títulos de los módulos */
-.et_pb_toggle_title {
-    font-size: 18px;
-    font-weight: bold;
-    padding: 15px;
-    cursor: pointer;
-    color: #333;
-}
-
-.et_pb_toggle_open .et_pb_toggle_title {
-    color: #fff;
-}
-
-.et_pb_toggle_title:hover {
-    background-color: #0073e6;
-    color: #fff;
-    transition: background-color 0.3s ease;
-}
-
-/* Contenido de los módulos */
-.et_pb_toggle_content {
-    padding: 15px;
-    background-color: #fafafa;
-    border-top: 1px solid #ddd;
-}
-
-/* Estilos de listas */
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0;
-}
-
-ul li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    color: #555;
-}
-
-ul li:last-child {
-    border-bottom: none;
-}
-
-ul li:hover {
-    background-color: #eaeaea;
-    transition: background-color 0.3s ease;
-}
-
-/* Estilos de etiquetas de formulario */
-.hot-form__label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: block;
-    color: #333;
-}
-
-/* Acentuado para el texto */
-strong {
-    color: #0073e6;
-}
-
-/* Espaciado entre bloques */
-.hot-form--checkbox {
-    margin-bottom: 15px;
-}
-
-/* Ajustes responsivos */
-@media (max-width: 768px) {
-    .et_pb_toggle_title {
-        font-size: 16px;
-    }
-
-    .et_pb_toggle_content {
-        padding: 10px;
-    }
-
-    ul li {
-        padding: 8px;
-    }
-}
-
-                        
-
-						</style>
+						
 					
 					<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-45d673e2 e-con-full e-flex e-con e-child" data-id="45d673e2" data-element_type="container">
 						<div class="elementor-element elementor-element-2f74febe elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="2f74febe" data-element_type="widget" data-widget_type="text-editor.default">
