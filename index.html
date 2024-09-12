@@ -450,32 +450,25 @@ document.ondragstart = function() { return false;}
 						<div class="elementor-widget-container">
 									<p style="text-align: center;">ESTA OFERTA EXPIRA EN:</p>						</div>
 						</div>
-
-						<!--contador-->
-						<div class="eael-countdown-wrapper" data-countdown-id="741f8bca" data-expire-type="none" data-countdown-type="evergreen" data-evergreen-time="1800" data-evergreen-recurring="1" data-evergreen-recurring-stop="Mar 31 2025 0:00:00 -6">
-							<div class="eael-countdown-container eael-countdown-label-block eael-countdown-label-block-tablet  eael-countdown-show-separator eael-countdown-separator-dotted">
-								<ul id="eael-countdown-741f8bca" class="eael-countdown-items" data-date="Jan 01 1970 0:00:00 -6">
-														<li class="eael-countdown-item"><div class="eael-countdown-hours"><span data-hours class="eael-countdown-digits" style="color: white;">24</span><span class="eael-countdown-label">Horas</span></div></li>				<li class="eael-countdown-item"><div class="eael-countdown-minutes"><span data-minutes class="eael-countdown-digits">00</span><span class="eael-countdown-label">Minutos</span></div></li>				<li class="eael-countdown-item"><div class="eael-countdown-seconds"><span data-seconds class="eael-countdown-digits">00</span><span class="eael-countdown-label">Segundos</span></div></li>				</ul>
-								<div class="eael-countdown-expiry-template" style="display: none;">
-								</div>
-								<div class="clearfix"></div>
-							</div>
-						</div>
-				
 						<!--fin contador nuevo-->
+
 						<div class="timer">
 							<div id="hours">24</div>:<div id="minutes">00</div>:<div id="seconds">00</div>
 						</div>
 						<style>
 							.timer {
                                font-size: 3rem;
+							   color: white;
                                font-weight: bold;
                                 text-align: center;
+								display: flex;
+								gap: 10px; 
+
                                }
 
                             #hours, #minutes, #seconds {
                                display: inline-block;
-                               width: 3rem;
+                               width: 4rem;
                                text-align: center;
                              }
 						</style>
