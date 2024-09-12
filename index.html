@@ -719,10 +719,12 @@ window.onload = startTimer;
     cursor: pointer;
     padding: 15px;
     text-align: left;
+	width: 500px;
     border: none;
     outline: none;
     font-size: 1.2rem;
     width: 100%;
+	padding: 30px;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
@@ -766,106 +768,13 @@ window.onload = startTimer;
 		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-5663a4e e-con-full e-flex e-con e-child" data-id="5663a4e" data-element_type="container">
 				<div class="elementor-element elementor-element-f44389 elementor-widget elementor-widget-text-editor" data-id="f44389" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<p style="text-align: center;">Copyright 2024 &#8211; Toma tu Drink<br />Todos los derechos reservados.</p>						</div>
+							<p style="text-align: center;">Copyright 2024 &#8211; educatechPe<br />Todos los derechos reservados.</p>						</div>
 				</div>
 				</div>
 					</div>
 				</div>
 				</div>
-			<div id="wpcp-error-message" class="msgmsg-box-wpcp hideme"><span>error: </span>Contenido protegido</div>
-	<script>
-	var timeout_result;
-	function show_wpcp_message(smessage)
-	{
-		if (smessage !== "")
-			{
-			var smessage_text = '<span>Alert: </span>'+smessage;
-			document.getElementById("wpcp-error-message").innerHTML = smessage_text;
-			document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp showme";
-			clearTimeout(timeout_result);
-			timeout_result = setTimeout(hide_message, 3000);
-			}
-	}
-	function hide_message()
-	{
-		document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp hideme";
-	}
-	</script>
-		<style>
-	@media print {
-	body * {display: none !important;}
-		body:after {
-		content: "No tienes los permisos necesarios para realizar esta acci&oacute;n"; }
-	}
-	</style>
-		<style type="text/css">
-	#wpcp-error-message {
-	    direction: ltr;
-	    text-align: center;
-	    transition: opacity 900ms ease 0s;
-	    z-index: 99999999;
-	}
-	.hideme {
-    	opacity:0;
-    	visibility: hidden;
-	}
-	.showme {
-    	opacity:1;
-    	visibility: visible;
-	}
-	.msgmsg-box-wpcp {
-		border:1px solid #f5aca6;
-		border-radius: 10px;
-		color: #555;
-		font-family: Tahoma;
-		font-size: 11px;
-		margin: 10px;
-		padding: 10px 36px;
-		position: fixed;
-		width: 255px;
-		top: 50%;
-  		left: 50%;
-  		margin-top: -10px;
-  		margin-left: -130px;
-  		-webkit-box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
-		-moz-box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
-		box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
-	}
-	.msgmsg-box-wpcp span {
-		font-weight:bold;
-		text-transform:uppercase;
-	}
-		.warning-wpcp {
-		background:#ffecec url('https://tomatudrink.com/wp-content/plugins/wp-content-copy-protector/images/warning.png') no-repeat 10px 50%;
-	}
-    </style>
-			<script type='text/javascript'>
-				const lazyloadRunObserver = () => {
-					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
-					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
-						entries.forEach( ( entry ) => {
-							if ( entry.isIntersecting ) {
-								let lazyloadBackground = entry.target;
-								if( lazyloadBackground ) {
-									lazyloadBackground.classList.add( 'e-lazyloaded' );
-								}
-								lazyloadBackgroundObserver.unobserve( entry.target );
-							}
-						});
-					}, { rootMargin: '200px 0px 200px 0px' } );
-					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
-						lazyloadBackgroundObserver.observe( lazyloadBackground );
-					} );
-				};
-				const events = [
-					'DOMContentLoaded',
-					'elementor/lazyload/observe',
-				];
-				events.forEach( ( event ) => {
-					document.addEventListener( event, lazyloadRunObserver );
-				} );
-			</script>
-			<noscript><img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=7145259428844197&ev=PageView&noscript=1&cd%5Bpage_title%5D=Cocteleria+en+tus+manos+%F0%9F%8D%B7&cd%5Bpost_type%5D=page&cd%5Bpost_id%5D=871&cd%5Bplugin%5D=PixelYourSite&cd%5Buser_role%5D=guest&cd%5Bevent_url%5D=tomatudrink.com%2Fcocteleriaentusmanos%2F" alt=""></noscript>
+		
 <link rel='stylesheet' id='e-animations-css' href='https://tomatudrink.com/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.23.4' media='all' />
 <script src="https://tomatudrink.com/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=3.1.1" id="hello-theme-frontend-js"></script>
 <script id="eael-general-js-extra">
