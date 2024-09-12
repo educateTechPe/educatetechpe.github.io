@@ -675,88 +675,91 @@ window.onload = startTimer;
 
                   <!--Acordeon-->
 				  <div class="accordion">
-					<br/>
 					<button class="accordion-button">¿ES NECESARIO EXPERIENCIA PREVIA EN IA?</button>
 					<div class="accordion-content">
 						<p>NO SE NECESITA EXPERIENCIA PREVIA, el programa está diseñado para que aprendas desde lo más básico hasta llegar a lo avanzado. Recuerda que nuestro objetivo es que puedas reforzar tu conocimiento y potencializar tus habilidades. ¡EMPIEZA YA!</p>
 					</div>
-
+			
 					<button class="accordion-button">¿CÓMO ACCEDER AL PROGRAMA?</button>
 					<div class="accordion-content">
-						<p>Una vez realizado el pago, se envirá un correo electrónico con todas las instrucciones para el ingreso a la plataforma y área privada de alumnos. 
-
-							Completado el registro, tu cuenta de usuario quedará habilitada para el acceso a todos los programas que adquieras en Hotmart.</p>
+						<p>Una vez realizado el pago, se enviará un correo electrónico con todas las instrucciones para el ingreso a la plataforma y área privada de alumnos. Completado el registro, tu cuenta de usuario quedará habilitada para el acceso a todos los programas que adquieras en Hotmart.</p>
 					</div>
-
+			
 					<button class="accordion-button">¿OBTENDRÉ ALGÚN CERTIFICADO?</button>
 					<div class="accordion-content">
 						<p>Al finalizar el curso podrás obtener tu CERTIFICADO DE FINALIZACIÓN, el mismo que se genera una vez que hayas completado exitosamente cada uno de los módulos del programa.</p>
 					</div>
-
+			
 					<button class="accordion-button">¿PUEDO SOLICITAR REEMBOLSO?</button>
 					<div class="accordion-content">
-						<p>Estamos seguros de que el contenido y los recursos adicionales que se entregan en este curso, hacen que el valor sea mucho más de lo que estás pagando.
-
-							Si por alguna razón el programa no cumple con tus expectativas, no  contiene el temario que tú necesitas o simplemente no es lo que esperabas, puedes solicitar el reembolso dentro de los 7 primeros días. No haremos ninguna pregunta adicional.</p>
+						<p>Estamos seguros de que el contenido y los recursos adicionales que se entregan en este curso, hacen que el valor sea mucho más de lo que estás pagando. Si por alguna razón el programa no cumple con tus expectativas, no contiene el temario que tú necesitas o simplemente no es lo que esperabas, puedes solicitar el reembolso dentro de los 7 primeros días. No haremos ninguna pregunta adicional.</p>
 					</div>
+			
 					<button class="accordion-button">¿EXISTE GARANTÍA EN EL PAGO?</button>
-						<div class="accordion-content">
-							<p>Nuestra plataforma cumple con los requerimientos de seguridad para el comercio electrónico, lo que garantiza la privacidad de los datos que se generen durante la transacción de pago. 
-								La plataforma de pago de Hotmart ha sido verificada  para garantizar la seguridad en la transacción.</p>
-						</div>
-				 </div>
+					<div class="accordion-content">
+						<p>Nuestra plataforma cumple con los requerimientos de seguridad para el comercio electrónico, lo que garantiza la privacidad de los datos que se generen durante la transacción de pago. La plataforma de pago de Hotmart ha sido verificada para garantizar la seguridad en la transacción.</p>
+					</div>
 				</div>
+				
 			
 				  <!--fin-->
 				  <style>
 					.accordion {
+    width: 80%;
     max-width: 800px;
-	padding-left: 100px;
+    margin: 20px auto;
 }
 
 .accordion-button {
-    background-color: #007BFF;
-    color: white;
+    background-color: #f1f1f1;
+    color: #444;
     cursor: pointer;
-    padding: 15px;
-	width: 900px;
-    text-align: left;
-    border: none;
-    outline: none;
-    margin-top: 20px;
-    font-size: 1.2rem;
+    padding: 10px;
     width: 100%;
-	padding: 30px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .accordion-button:hover {
-    background-color: #0056b3;
+    background-color: #ddd;
 }
 
 .accordion-content {
+    padding: 10px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
-    padding: 15px;
-    border-radius: 0 0 5px 5px;
+    background-color: #f9f9f9;
 }
+
 				  </style>
 
 				  <script>
-					document.addEventListener('DOMContentLoaded', () => {
-    const accordionButton = document.querySelector('.accordion-button');
-    const accordionContent = document.querySelector('.accordion-content');
+					document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.accordion-button');
 
-    accordionButton.addEventListener('click', () => {
-        if (accordionContent.style.display === 'block') {
-            accordionContent.style.display = 'none';
-        } else {
-            accordionContent.style.display = 'block';
-        }
+    buttons.forEach(button => {
+        button.addEventListener('click', function () {
+            // Close all other accordion contents
+            document.querySelectorAll('.accordion-content').forEach(content => {
+                if (content !== this.nextElementSibling) {
+                    content.style.display = 'none';
+                }
+            });
+
+            // Toggle the clicked accordion content
+            const content = this.nextElementSibling;
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        });
     });
 });
+
 
 				  </script>
 				  <br/>
