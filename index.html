@@ -440,7 +440,7 @@ document.ondragstart = function() { return false;}
 						<div class="e-con-inner">
 					<div class="elementor-element elementor-element-76bd7cd elementor-widget elementor-widget-heading" data-id="76bd7cd" data-element_type="widget" data-widget_type="heading.default">
 					<div class="elementor-widget-container">	
-						<img src="images/medios_pago.png" style="display: flex;justify-content: center;align-items: center;" loading="lazy" decoding="async" width="1120" height="348" alt="">
+						<img src="images/medios_pago.png" style="display: flex;justify-content: center;align-items: center;" loading="lazy" decoding="async" width="1120" height="248" alt="">
 					   </div>	</div>
 					</div>
 						</div>
@@ -462,8 +462,64 @@ document.ondragstart = function() { return false;}
 							</div>
 						</div>
 				
-						<!--fin contador-->
-					
+						<!--fin contador nuevo-->
+						<div class="timer">
+							<div id="hours">24</div>:<div id="minutes">00</div>:<div id="seconds">00</div>
+						</div>
+						<style>
+							.timer {
+                               font-size: 3rem;
+                               font-weight: bold;
+                                text-align: center;
+                               }
+
+                            #hours, #minutes, #seconds {
+                               display: inline-block;
+                               width: 3rem;
+                               text-align: center;
+                             }
+						</style>
+						<script>
+							function startTimer() {
+    let hours = 24;
+    let minutes = 0;
+    let seconds = 0;
+
+    function updateDisplay() {
+        document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+        document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+        document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+    }
+
+    function countdown() {
+        if (seconds === 0) {
+            if (minutes === 0) {
+                if (hours === 0) {
+                    hours = 24;
+                    minutes = 0;
+                    seconds = 0;
+                } else {
+                    hours--;
+                    minutes = 59;
+                    seconds = 59;
+                }
+            } else {
+                minutes--;
+                seconds = 59;
+            }
+        } else {
+            seconds--;
+        }
+        updateDisplay();
+    }
+
+    setInterval(countdown, 1000);
+    updateDisplay(); // Initialize display
+}
+
+window.onload = startTimer;
+
+						</script>
 
 
 
