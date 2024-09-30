@@ -179,10 +179,82 @@ document.ondragstart = function() { return false;}
 	
 }
 	
-	
 	</style>
+       <!--NOTIFICACION CLIENTES--->
+	   <div id="notification">
+		<h3 id="customer-name"></h3>
+		<p id="time-ago"></p>
+		<a href="https://go.hotmart.com/A95436149E?dp=1">¡Comprar Ahora!</a>
+	  </div>
 
-       <!----->
+	   <style>
+		#notification {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 15px;
+      background-color: #f0f0f0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: none;
+      font-family: Arial, sans-serif;
+    }
+    #notification h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+    #notification p {
+      margin: 5px 0 10px;
+      font-size: 14px;
+      color: #555;
+    }
+    #notification a {
+      padding: 10px 15px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #notification a:hover {
+      background-color: #218838;
+    }
+	   </style>
+
+<script>
+	// Lista de nombres aleatorios
+	const nombres = [
+	  "Luz de Manta", "Carlos de Quito", "Ana de Loja", 
+	  "Pedro de Cuenca", "María de Quito", "José de Loja", 
+	  "Sara de Loja", "Luis de Cuenca","Luis de Guayaquil",
+	  "Joel de Quito", "Mario de Loja","Luis de Manta",
+	  "Rafael de Quito", "Mario de Guayaquil","Luis de Cuenca",
+	  "Sara de Manta", "Angie de Quito", "Vanessa de Loja", 
+	  "Juan de Cuenca", "Camila de Quito", "Julio de Loja", 
+	  "Carmen de Loja", "Sebastían de Cuenca","Jorge de Guayaquil",
+	];
+  
+	// Función para mostrar la notificación
+	function mostrarNotificacion() {
+	  const nombre = nombres[Math.floor(Math.random() * nombres.length)];
+	  const notification = document.getElementById('notification');
+	  document.getElementById('customer-name').textContent = `${nombre} compró el curso`;
+	  document.getElementById('time-ago').textContent = `Hace ${Math.floor(Math.random() * 59) + 1} minutos`;
+  
+	  // Mostrar el cuadro
+	  notification.style.display = 'block';
+  
+	  // Ocultar después de 5 segundos
+	  setTimeout(() => {
+		notification.style.display = 'none';
+	  }, 5000);
+	}
+  
+	// Llamar a la función cada 8 segundos
+	setInterval(mostrarNotificacion, 8000);
+	   </script>
+	   <!----->
 
 					
 		<div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-343defef e-con-full e-flex e-con e-child" data-id="343defef" data-element_type="container">
